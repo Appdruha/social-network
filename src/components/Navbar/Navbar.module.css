@@ -1,0 +1,35 @@
+.nav {
+    position: sticky;
+    top: 12px;
+    grid-area: n;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    align-self: start;
+}
+
+.nav_item {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav_item > img {
+    display: block;
+    place-self: center;
+    width: 24px;
+    height: 24px;
+}
+
+.nav_item:hover {
+    background: #d5d6da;
+}
+
+.nav_item_text {
+    margin: 0;
+    padding: 0;
+    place-self: center start;
+}

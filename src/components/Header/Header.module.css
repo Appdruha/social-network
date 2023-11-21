@@ -1,0 +1,53 @@
+.header_container {
+    width: 100%;
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    height: 60px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo {
+    display: block;
+    align-self: center;
+    margin-left: 8px;
+    cursor: default;
+}
+
+.loginBlock {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "img1 img2";
+    width: 80px;
+    height: 50px;
+    margin-right: 8px;
+    place-self: center;
+}
+
+.loginBlock a {
+    display: grid;
+}
+
+.loginBlock_profileImg {
+    grid-area: img1;
+    place-self: center start;
+}
+
+.loginBlock_logoutLogin {
+    grid-area: img2;
+    display: block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    place-self: center end;
+}
+
+.loginBlock > a {
+    color: white;
+    text-decoration: none;
+}

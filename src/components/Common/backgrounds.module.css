@@ -1,0 +1,7 @@
+.markerBox_trueBG {
+    background: radial-gradient(#c9f5d8, #48d085);
+}
+
+.markerBox_falseBG {
+    background: radial-gradient(#f6c4c4, #f85d5d);
+}

@@ -1,0 +1,107 @@
+.usersContainer {
+    background: #f8f8f8;
+    border-radius: 16px;
+    border: 1px solid #c9cacc;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 2fr 7fr 64px;
+    border: 1px solid #c9cacc;
+    border-radius: 16px;
+    height: 90px;
+    width: 550px;
+    align-items: center;
+    margin: 0 auto 6px auto;
+}
+
+.user > a {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    place-self: center;
+}
+
+.avatar {
+    place-self: center;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    max-width: 350px;
+    margin-bottom: 16px;
+}
+
+.markerBox {
+    display: flex;
+    width: 14px;
+    height: 100%;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    place-self: end;
+    border-left: 1px solid #c9cacc;
+    transition: width 500ms;
+}
+
+.marker {
+    margin: auto;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 250ms;
+}
+
+.form {
+    display: block;
+    margin: 20px 0 10px 0;
+    width: 100%;
+}
+
+.formInput {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 520px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #c9cacc;
+}
+
+.formInput input {
+    border-radius: 8px;
+    width: 514px;
+    height: 28px;
+    outline: none;
+    border: none;
+}
+
+.resetInput {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.line {
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 90%;
+    height: 0;
+    border: 1px solid #c9cacc;
+}
+
+.user:hover .marker{
+    opacity: 1;
+    transition-delay: 220ms;
+}
+
+.user:hover .markerBox {
+    width: 64px;
+}

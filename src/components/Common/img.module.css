@@ -1,0 +1,23 @@
+.smallImg {
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid #c9cacc;
+}
+
+.mediumImg {
+    display: block;
+    width: 78px;
+    height: 78px;
+    border-radius: 39px;
+    border: 1px solid #c9cacc;
+}
+
+.bigImg {
+    display: block;
+    width: 156px;
+    height: 156px;
+    border-radius: 78px;
+    border: 1px solid #c9cacc;
+}
