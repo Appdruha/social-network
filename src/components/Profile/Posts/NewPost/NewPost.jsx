@@ -1,7 +1,6 @@
 import React, {useRef, useState} from "react";
-import {getNewPostText} from "../../../../redux/profile-selector";
-import {addPostAC, updateNewPostTextAC} from "../../../../redux/profile-reducer";
-import {useDispatch, useSelector} from "react-redux";
+import {addPostAC} from "../../../../redux/profile-reducer";
+import {useDispatch} from "react-redux";
 import postsStyles from  "../Posts.module.css";
 import fonts from "../../../Common/fonts.module.css"
 

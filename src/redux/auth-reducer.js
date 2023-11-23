@@ -37,7 +37,9 @@ export const getAuthUserData = () => async (dispatch) => {
 export const tryLogin = (email, password, rememberMe) => async (dispatch) => {
     return await authAPI.login(email, password, rememberMe).then(response => {
         if (response.resultCode === 0) {
-            dispatch(getAuthUserData())
+            dispatch(getAuthUserData());
+        } else {
+            alert("Incorrect login or password!")
         }
     })
 }

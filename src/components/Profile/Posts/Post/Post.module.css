@@ -1,5 +1,58 @@
-.item img {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
+.post {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #c9cacc;
+    background: #f8f8f8;
 }
+
+.post > div{
+    width: 92%;
+}
+
+.post_header {
+    display: flex;
+    margin-top: 8px;
+    height: 56px;
+    border-bottom: 1px solid #c9cacc;
+}
+
+.post_header > p {
+    padding: 10px 0 0 10px;
+}
+
+.post_body {
+    height: fit-content;
+    border-bottom: 1px solid #c9cacc;
+}
+
+.post_body > p {
+    padding: 10px 0 10px 2px;
+    word-break: break-word;
+}
+
+.post_footer {
+    display: flex;
+}
+
+.post_footerLikesBox {
+    display: flex;
+    margin: 10px 0 10px 4px;
+}
+
+.post_footerLikesBox > img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.post_footerLikesBox > p {
+    padding-left: 4px;
+    cursor: default;
+}
+
+

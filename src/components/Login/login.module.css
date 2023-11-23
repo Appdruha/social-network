@@ -1,0 +1,73 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #c9cacc;
+    background: #f8f8f8;
+    border-radius: 16px;
+}
+
+.form > button {
+    background: #e7e9ec;
+    border: 1px solid #c9cacc;
+    border-radius: 8px;
+    width: 132px;
+    height: 36px;
+    cursor: pointer;
+    transition: background 400ms;
+    margin: 12px 0 12px 0;
+}
+
+.form > button:hover {
+    background: #d5d6da;
+}
+
+.form > p {
+    margin-top: 12px;
+}
+
+.inputContainer {
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 44px;
+    margin-top: 16px;
+}
+
+.placeholder {
+    position: absolute;
+    top: 21px;
+    left: 5px;
+    transition: transform 200ms, color, 200ms;
+    pointer-events: none;
+}
+
+.input {
+    margin: 16px 0 0 0;
+    padding: 0 0 0 4px;
+    height: 26px;
+    width: 99%;
+    border: 1px solid #c9cacc;
+    background: #f8f8f8;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input:focus ~ .ph1,
+.input:not(:placeholder-shown) ~ .ph1,
+.input:-webkit-autofill ~ .ph1 {
+    transform: translateX(-10px) translateY(-20px) scale(0.8);
+    color: #1c1c1c;
+}
+
+.input:focus ~ .ph2,
+.input:not(:placeholder-shown) ~ .ph2,
+.input:-webkit-autofill ~ .ph2{
+    transform: translateX(-13px) translateY(-20px) scale(0.8);
+    color: #1c1c1c;
+}
+
+.checkBox {
+    display: flex;
+    margin-top: 16px;
+}
